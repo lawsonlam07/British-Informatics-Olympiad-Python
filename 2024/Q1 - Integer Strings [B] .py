@@ -15,7 +15,7 @@ intervals = [0] + [int(str(i) + "8"*i + "9") for i in range(100)]
 start, index = [int(v) for v in input("Enter n and i: ").split(" ")]
 startDigits = len(str(start))
 
-index += intervals[startDigits-1] + startDigits*(start - int("1" + "0"*(startDigits - 1)))
+index += intervals[startDigits-1] + startDigits*(start - 10**(startDigits-1))
 # Instead of rewriting the string, I just decided to shift the index value to the appropriate spot.
 
 digits = intervals.index(next(v for v in intervals if v >= index))
