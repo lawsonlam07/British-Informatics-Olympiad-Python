@@ -42,3 +42,4 @@ Any issues or questions with the code, such as if you want me to explain any met
 |2021|**B**|❌|❌|
 |2022|**D**|❌|❌|
 |2023|**E**|❌|**S**|
+|2023|**B**|**?**|**?**|
