@@ -3,8 +3,8 @@
 intervals = [0] + [int(str(i) + "8"*i + "9") for i in range(100)]
 # Makes an array of all the characters where the number of digits changes.
 # E.g. There are 9 one digit numbers (9 chars total)
-# There are 90 two digit numbers (9 + 180 = 189 chars total)
-# There are 900 three... (189 + 2700 = 2889 chars total)
+# There are 90 two digit numbers (9 + 180 = 189 chars total) [180 = 90 * 2]
+# There are 900 three... (189 + 2700 = 2889 chars total) [2700 = 900 * 3]
 # And so on.
 # Therefore, the array goes [0, 9, 189, 2889, 3889, 4889...]
 
