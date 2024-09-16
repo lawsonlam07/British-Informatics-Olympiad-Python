@@ -20,12 +20,12 @@ index += intervals[startDigits-1] + startDigits*(start - 10**(startDigits-1))
 
 digits = intervals.index(next(v for v in intervals if v >= index))
 # We check how many digits the number in the indexed position would have.
-d, m = divmod(index - intervals[digits - 1] - 1, digits)
+num, pos = divmod(index - intervals[digits - 1] - 1, digits)
 # We then work out the number at that position, and the index of the exact character we want.
-# If it helps you understand, use: print(d + 10**(digits-1), m)
+# If it helps you understand, use: print(num + 10**(digits-1), pos)
 # It returns the full number that the index references, and the specific character in that number.
 
-print(str(d + 10**(digits-1))[m])
+print(str(num + 10**(digits-1))[pos])
 
 """
 Difficulty: B
