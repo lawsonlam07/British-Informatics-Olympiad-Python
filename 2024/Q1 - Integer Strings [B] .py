@@ -18,15 +18,14 @@ startDigits = len(str(start))
 index += intervals[startDigits-1] + startDigits*(start - int("1" + "0"*(startDigits - 1)))
 # Instead of rewriting the string, I just decided to shift the index value to the appropriate spot.
 
-
 digits = intervals.index(next(v for v in intervals if v >= index))
 # We check how many digits the number in the indexed position would have.
 d, m = divmod(index - intervals[digits - 1] - 1, digits)
 # We then work out the number at that position, and the index of the exact character we want.
-# If it helps you understand, use: print(d + int("1" + "0"*(digits - 1)), m)
+# If it helps you understand, use: print(d + 10**(digits-1), m)
 # It returns the full number that the index references, and the specific character in that number.
 
-print(str(d + int("1" + "0"*(digits - 1)))[m])
+print(str(d + 10**(digits-1))[m])
 
 """
 Difficulty: B
