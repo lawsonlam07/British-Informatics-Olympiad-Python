@@ -2,7 +2,7 @@
 
 ## The letter enclosed in square brackets to the right of the question represents the difficulty.
 
-### Feel free to copy the code, just make sure to credit me (@Pararcana).
+### Feel free to copy the code, just make sure to credit me (@lawsonlam07).
 
 All of the code score full marks, and no libraries are used.
 
